@@ -1,5 +1,3 @@
-// notificationService.js
-
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -22,7 +20,6 @@ app.post('/send-notification', (req, res) => {
   return res.status(200).json({ message: 'Notificação enviada com sucesso' });
 });
 
-const port = process.env.PORT || 3001;
-app.listen(port, () => {
-  console.log(`Serviço de Notificação rodando na porta ${port}`);
+app.listen(3001, () => {
+  console.log(`Serviço de Notificação rodando na porta 3001`);
 });
